@@ -1631,5 +1631,17 @@
       <field type="uint16_t[4]" name="rpm" units="rpm">RPM (eRPM).</field>
       <field type="uint16_t[4]" name="count">count of telemetry packets received (wraps at 65535).</field>
     </message>
+
+    <message id="11033" name="DIRECT_MOTOR_CONTROL">
+      <description>Directly set each motor on the BlueROV2 to a given pwm. Each PWM should be a positive integer with value from 1100 to 1900. 1500 corresponds to stopped motors.</description>
+      <field type="uint16_t" name="motor1">Speed of motor 1</field>
+      <field type="uint16_t" name="motor2">Speed of motor 2</field>
+      <field type="uint16_t" name="motor3">Speed of motor 3</field>
+      <field type="uint16_t" name="motor4">Speed of motor 4</field>
+      <field type="uint16_t" name="motor5">Speed of motor 5</field>
+      <field type="uint16_t" name="motor6">Speed of motor 6</field>
+      <field type="uint16_t" name="motor7">Speed of motor 7</field>
+      <field type="uint16_t" name="motor8">Speed of motor 8</field>
+    </message>
   </messages>
 </mavlink>
